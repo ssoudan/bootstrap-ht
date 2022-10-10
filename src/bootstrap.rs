@@ -343,12 +343,12 @@ mod tests {
             let a_95percentile = a
                 .iter()
                 .sorted_by(|x, y| x.partial_cmp(y).unwrap())
-                .nth(95)
+                .nth(95 * a.len() / 100)
                 .unwrap();
             let b_95percentile = b
                 .iter()
                 .sorted_by(|x, y| x.partial_cmp(y).unwrap())
-                .nth(95)
+                .nth(95 * b.len() / 100)
                 .unwrap();
             (a_95percentile - b_95percentile).abs()
         };
