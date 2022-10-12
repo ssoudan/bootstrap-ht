@@ -17,7 +17,7 @@
 
 use std::time::Duration;
 
-use bootstrap_ht::bootstrap::{non_parametric_ht, PValueType};
+use bootstrap_ht::bootstrap::{two_samples_non_parametric_ht, PValueType};
 use criterion::{criterion_group, criterion_main, BenchmarkId, Criterion};
 use rand::prelude::Distribution;
 use rand::SeedableRng;
@@ -63,7 +63,7 @@ fn non_parametric_ht_benchmark_f32(c: &mut Criterion) {
             };
 
             b.iter(|| {
-                non_parametric_ht(
+                two_samples_non_parametric_ht(
                     &mut rng,
                     s_a,
                     s_b,

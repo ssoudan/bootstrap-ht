@@ -54,7 +54,7 @@ fn main() {
   (a_max - b_max).abs()
  };
 
- let p_value = bootstrap::non_parametric_ht(
+ let p_value = bootstrap::two_samples_non_parametric_ht(
   &mut rng,
   &a,
   &b,

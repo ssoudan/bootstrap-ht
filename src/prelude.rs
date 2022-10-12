@@ -35,7 +35,7 @@
 //! # Example
 //!
 //! ```rust
-//! use bootstrap_ht::prelude::bootstrap::{non_parametric_ht, PValueType};
+//! use bootstrap_ht::prelude::bootstrap::{two_samples_non_parametric_ht, PValueType};
 //! use itertools::Itertools;
 //! use rand::prelude::Distribution;
 //! use rand::SeedableRng;
@@ -69,7 +69,7 @@
 //!     (a_95percentile - b_95percentile).abs()
 //! };
 //!
-//! let p_value = non_parametric_ht(
+//! let p_value = two_samples_non_parametric_ht(
 //!     &mut rng,
 //!     &a,
 //!     &b,
@@ -85,5 +85,7 @@
 
 /// non-parametric bootstrap hypothesis test
 pub mod bootstrap {
-    pub use crate::bootstrap::{non_parametric_ht, PValueType};
+    pub use crate::bootstrap::{
+        one_sample_non_parametric_ht, two_samples_non_parametric_ht, PValueType,
+    };
 }
