@@ -21,6 +21,7 @@
  statistic is more 'extreme' than the test statistic for our initial samples.
 
  # References
+ - Introduction to the Bootstrap, Efron and Tibshirani 
  - [Bootstrap Hypothesis Testing](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#Bootstrap_hypothesis_testing)
  - [P-value](https://en.wikipedia.org/wiki/P-value)
  - [Stats 102A Lesson 9-2 Bootstrap Hypothesis Tests, Miles Chen](https://www.youtube.com/watch?v=s7do_F9LV-w)
